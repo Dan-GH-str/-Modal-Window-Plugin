@@ -86,3 +86,15 @@
 .myModal-footer button {
     margin: 2px 5px;
 }
+
+@media(max-width: 480px) {
+    .myModal-window {
+        width: 90%!important;
+    }
+}
+
+@media(max-width: 225px) {
+    .btn-mg {
+        margin-bottom: 5px;
+    }
+}

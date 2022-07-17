@@ -12,8 +12,8 @@ const toHTML = car => `
         <div class="col-md-7 p-4 ps-md-0">
             <h5 class="mt-0">${car.title}</h5>
             <p>${car.discription}</p>
-            <a href="#" class="btn btn-primary" data-btn="price" data-btnId="${car.id}">Узнать цену</a>
-            <a href="#" class="btn btn-danger" data-btn="remove" data-btnId="${car.id}">Удалить</a>
+            <a href="#" class="btn btn-primary btn-mg" data-btn="price" data-btnId="${car.id}">Узнать цену</a>
+            <a href="#" class="btn btn-danger btn-mg" data-btn="remove" data-btnId="${car.id}">Удалить</a>
         </div>
     </div>
 `
