@@ -1,0 +1,88 @@
+
+
+.myModal.open .myModal-overlay, 
+.myModal.open .myModal-window {
+    opacity: 1;
+    z-index: 100;
+}
+
+.myModal.hiding .myModal-overlay, 
+.myModal.hiding .myModal-window {
+    opacity: 1;
+    z-index: 100;
+}
+
+
+.myModal.open .myModal-window {
+    transform: translateY(100px);
+}
+
+.myModal.open .myModal-overlay {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.myModal.hiding .myModal-window {
+    transform: translateY(-200px);
+}
+
+.myModal.hiding .myModal-overlay {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.myModal-overlay, .myModal-window {
+    opacity: 0;
+    z-index: -1;
+}
+
+.myModal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color .2s ease;
+}
+
+.myModal-window {
+    width: 600px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 0 auto;
+    transform: translateY(-200px);
+    transition: transform .2s ease;
+}
+
+.myModal-header{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+} 
+
+.myModal-title {
+    font-size: 1.5rem;
+}
+
+.myModal-close {
+    cursor: pointer;
+} 
+
+.myModal-body {
+    padding: 10px;
+}
+
+.myModal-body p {
+    margin: 0 0 10px;
+}
+
+.myModal-footer {
+    padding: 5px 10px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.myModal-footer button {
+    margin: 2px 5px;
+}
